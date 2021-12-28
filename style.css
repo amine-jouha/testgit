@@ -1,0 +1,224 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: century gothic;
+}
+
+.main {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(freelance.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+
+}
+ul li a{
+	text-decoration: none;
+	color: #F8A21F;
+	margin: 10px;
+	padding: 5px 20px;
+	transition: 0.8s ease;	
+}
+ul li a:hover{
+	background-color: #F5C070 ;
+	color:#fff;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	 
+}
+ul li{
+	display: inline-block;
+}
+ul li.active a{
+	background-color: #F5C070 ;
+	color:#fff;	
+}
+.logo img{
+	position: absolute;
+	left:20px;
+	top: 5px;
+	height: auto;
+	width: 70px;
+
+}
+.title{
+	position: absolute;
+	left: 35%;
+	top: 30%;
+	transform: translate(-50px,-50px);
+}
+.title h1{
+	color: #fff;
+	font-size:70px;
+
+}
+.button {
+	position: absolute;
+	left: 35%;
+	top: 60%;
+
+}
+
+.btn{
+	font-size: 30px;
+	text-decoration: none;
+	border: 1px solid #fff;
+	color: #F8A21F;
+	margin: 10px;
+	padding: 5px 20px;
+	transition: 0.8s ease;
+
+}
+.btn:hover{
+	background-color:#F9D0A7;
+	color: #fff;
+}
+.txt{
+	position: absolute;
+	top: 37%;
+	color: #D0C3B6;
+	left: 300px;
+	right: 300px;
+
+}
+.box{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 3px solid #fff;
+	border-right: 3px solid #fff;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+.box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+@keyframes animate{
+	0%
+	{
+       opacity: 0;
+       transform: rotate(45deg) translate(-20px,-20px);
+	}
+	50%
+	{
+       opacity: 2;
+	}100%
+	{
+       opacity: 0;
+       transform: rotate(45deg) translate(20px,20px);
+	}
+}
+.skills{
+	width: 85%;
+	height: 400px;
+	margin: 15px auto;
+	color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.skills .bars{
+	width: 65%;
+}
+.skills .bars .bar span{
+	background-color: #111;
+	width: 100%;
+	height: 20px;
+	display: inline-block;
+	border-radius: 20px;
+	position: relative;
+}
+.skills .bars .bar span:before{
+	content: '';
+ position: absolute;
+ left: 3px;
+ top: 5%;
+ height: 80%;
+ background: red;
+ border-radius: 20px;
+ z-index: 1000;
+ animation: bar 4s ease infinite;
+}
+@keyframes bar{
+	from{
+		width: 0;
+	}
+}
+.skills .bars .bar:nth-of-type(1) span:before{
+	width: 80%;
+}
+.skills .bars .bar:nth-of-type(2) span:before{
+	width: 75%;
+}
+.skills .bars .bar:nth-of-type(3) span:before{
+	width: 60%;
+}
+.skills .bars .bar:nth-of-type(4) span:before{
+	width: 50%;
+}
+.skills .bars .bar:nth-of-type(5) span:before{
+	width: 40%;
+}
+.skills .img-skills img{
+	width: 380px;
+	height: 380px;
+	border-radius: 50%;
+	box-shadow: 0 8px 6px -6px black;
+}
+/*projects*/
+.projects{
+	width: 90%;
+	margin:auto;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.projects .card{
+	width: 400px;
+	height: auto;
+	background: #ddd;
+}
+.projects .card p{
+	padding: 15px;
+	text-align: center;
+}
+.projects .card button{
+	margin: auto;
+	border-radius: 20px;
+	border:none;
+	width: 200px;
+	height: 40px;
+	background: #f2f2f2;
+}
+.projects .card button a{
+	text-decoration: none;
+	color: #111;
+	font-size: 20px;
+	font-weight: 500;
+}
+.sk{
+	position: absolute;
+	right: 45%;
+}
+.about img{
+	background-color: pink;
+	border-radius: 2000px;
+	width: 600px;
+}
